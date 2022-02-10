@@ -1,0 +1,24 @@
+
+
+a) 
+step 1) initialize three variables: min and max with the value array[0]i; and i=1.
+step 2) step through the array from element array[i].
+		if array[i] < min: set min to array[i].
+		if array[j] > max: set max to array[i].
+
+This algorithm steps through the array once and and so is O(n).
+
+b)
+As the array is sorted, the indexes of the first and last elements are the desired answers.
+step 1)	return array[0], array[-1]
+
+c) use merge sort to sort the unsorted array O(nlog(n))
+step 1) return array[0], array[1]. O(1)
+
+
+d)
+step 1) initialize three variables: min and min2 with the value array[0] and array[1] depending on which is larger; and i=1.
+step 2) step through the array from element array[i].
+		if array[i] < min: set min2 to min, and min to array[i].
+
+

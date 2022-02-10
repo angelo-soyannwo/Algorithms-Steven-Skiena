@@ -1,0 +1,50 @@
+
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+
+
+typedef struct entry {
+	void *key;
+	void *value;
+
+} entry;
+
+entry entry_constructor(void *key, unsigned long keySize, void *value, unsigned long valueSize); // constructor function
+
+void entry_destructor(entry *entry); // destructor 
+
+
+
+
+
+typedef dictionary {
+	
+
+}
+
+
+int main() {
+
+}
+
+
+entry entry_constructor(void *key, unsigned long keySize, void *value, unsigned long valueSize) {
+
+	entry entry;
+	entry.key = malloc(keySize);
+	entry.value = malloc(valueSize);
+
+	memcpy(entry.key, key, keySize);
+	memcpy(entry.value, value, valueSize);
+
+	return entry;
+}
+
+
+void entry_destructor(entry *entry){
+	free(entry->key);
+	free(entry->value);
+	free(entry);
+}

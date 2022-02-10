@@ -1,0 +1,17 @@
+
+
+The grinch should use the following process to sort 2n players into two teams as unfairly as possible.
+
+1)Assign each player a numerical skill rating.
+
+2)Construct a min heap with all the players. O(nlog(n))
+
+3)Extract the minimum rated player and store their name in an array of bad players. O(1)
+
+4)delete that player from the heap and call heapify. O(nlog(n))
+
+5)Once this has been done n times, all remaining players should be inserted into another array. O(n)
+
+This algorithm generates two teams in the worst came time complexity o(nlog(n)).
+
+

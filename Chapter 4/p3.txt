@@ -1,0 +1,9 @@
+
+
+3
+
+step 1) Use merge sort to sort the array in O(nlog(n)) time.
+step 2) set i to 0 in a for loop with upper boun n
+step 3) insert the array[i] and array[2n-i] in the sorted array into a pair
+
+
