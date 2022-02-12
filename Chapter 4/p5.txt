@@ -1,0 +1,27 @@
+
+
+step 1) sort the array using mergesort. O(nlogn)
+step 2) step through the array and count the number of occurences of each element. O(n)
+
+i = 0;
+n = len(array);
+var = array[i]
+current_count = 0;
+max_count = 0;
+mode = None;
+current_elem = array[j]
+
+
+for (i; i<n; i++) {
+	if (array[i] == var)
+		current_count += 1
+		
+	if (array[i] != var){
+		if (current_count > max_count){
+			max_count = current_count;
+			mode = array[i-1];
+			var = array[i];
+			current_count = 0;
+		}
+	}
+}
