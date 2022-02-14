@@ -1,0 +1,10 @@
+
+
+a)
+step 1) sort the array using merge sort. O(nlogn)
+step 2) for each element in the array perform binary search on the array for the value x-element. O(nlogn)
+
+
+b)
+step 1) create an array containing x-element for each element in the sorted array O(n)
+step 2) step through one element from 0 to n and the other array from n to 0 and compare each elemt for equality. O(n)

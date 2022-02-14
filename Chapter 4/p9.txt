@@ -1,0 +1,48 @@
+
+
+a)
+
+step 1) initialize a new set
+step 2) count the elements in set b and a (if int_min is in one of the sets, add the element to the set). O(n + m) -> O(n)  where n > m
+step 3) sort the larger set using merge sort. O(nlogn)
+step 4) search for each element in the small set in the larger set using binary search. O(mlogn) m < n
+step 5) if an element is in both sets, set that array position to intmin in both sets and place int the new set. O(m)
+step 6) add all remaining elements to the new sets. O(n + m)
+
+b)
+AS the two arrays would be sets, they contain no more than one of each element each.
+
+step 1) Step through the each array and count the number of elements. set m as the length of the smaller set and n as the length of the longer set.
+step 2) use the following merging algorithm:
+
+credit to Abdul Popoola https://github.com/abdulapopoola/TADMBook/blob/master/Chapter%204/4.09.md
+
+void setMerge(int array[], int set1[], int set2 int m, int n){
+	int i=0, j=0, z=0;
+
+	while(i<m && j<n) {
+		if (set1[i]==set2[j]){
+			array[z] = set2[j];
+			i++;
+			j++;
+			z++;
+		}
+
+		else if (set1[i] < set2[j]){
+			array[z] = set1[i];
+			i++;
+			z++;
+		}
+
+		else {
+			array[z] = set12[j];
+			j++;
+			z++
+		}
+
+	}
+
+	while(i<m) {
+		array[z] = set1[i]
+	}
+}

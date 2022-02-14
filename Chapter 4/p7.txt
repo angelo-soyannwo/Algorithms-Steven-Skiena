@@ -1,0 +1,19 @@
+
+credit to Abdula popoola https://github.com/abdulapopoola/TADMBook/tree/master/Chapter%204
+
+a)
+step 1) Use merge sort to sort the bills by name hashes of the name could be used. O(nlogn)
+step 2) Use merge sort to sort the payments by name O(nlogn)
+step 3) Step through the array of payments and match each payment to a bill before removing the bill if it's value has been fully paid.
+step 4) Any bills left in the bill pile have not been paid.
+
+
+b)
+step 1) Create an array for each publisher. O(30)
+step 2) Step through the arrays and instert each book into it's publisher's array and then increment that company's umber of books by 1 O(n)
+
+c)
+step 1) Sort the books by the name of whoever took them out before stepping through the sorted list and removing all duplicates the remaining number of books are the answer.
+
+
+

@@ -1,0 +1,7 @@
+
+
+step 1) sort one set using merge sort. O(nlogn)
+step 2) for each element in the second set, compute x-element and insert that value into an array. O(n)
+step 3) for each element in the the constructed array, use binary seach on the sorted array to search for the element. O(nlogn)
+
+
