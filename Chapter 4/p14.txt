@@ -1,0 +1,7 @@
+
+
+create a min heap for each of the k lists. O(kn)
+
+step 1) Extract the minimum element from each heap (the readjustment of the heap is O(logn). O(k)
+step 2)	Reapeat n times
+

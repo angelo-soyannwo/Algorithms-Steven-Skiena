@@ -1,0 +1,7 @@
+
+
+step 1) initialize a hash table where the hashing function is greater than n.
+step 2) set initialize var.
+step 3) walk through the array and set set the hash table entry for the number to one if there is no value in the hash table or increment the value by 1. if value < (n/2) set var = number.
+
+ 

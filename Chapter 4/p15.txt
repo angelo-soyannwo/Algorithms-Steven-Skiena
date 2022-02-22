@@ -1,0 +1,7 @@
+
+a)
+step 1) Scan through the array and find the largest element. O(n)
+
+b)
+step 1) Scan through the array and find the third largest element. O(n)
+step 2) Construct a heap and then 

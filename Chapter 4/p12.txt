@@ -1,0 +1,8 @@
+
+Note: the array is a set and so, contains no more than one of each integer
+
+step 1) Create a min heap and insert the elements into it. O(n)
+step 2) Use min extract to extract the minimum element of the list and reconstruct the heap. O(logn)
+Step 2) repeat step 2 k times.
+
+O(n + klogn)

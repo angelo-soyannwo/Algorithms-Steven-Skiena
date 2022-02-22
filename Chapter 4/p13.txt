@@ -1,0 +1,14 @@
+You wish to store a set of n numbers in either a max-heap or a sorted array.
+For each application below, state which data structure is better, or if it does not matter. Explain your answers.
+
+(a) Want to find the maximum element quickly.
+A heap is better because, heap construction is O(n) while sorting is O(nlogn). Both have O(1)
+
+(b) Want to be able to delete an element quickly.
+Max heap is better because deletion takes O(logn) rather than O(n) when adjusting the positions of the elements in the sorted array.
+
+(c) Want to be able to form the structure quickly.
+Tie both take O(nlogn) to be built.
+
+(d) Want to find the minimum element quickly.
+Sorted array is better because the minimum element can be found in O(1).

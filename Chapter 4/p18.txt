@@ -1,0 +1,6 @@
+
+step 1) Initialize two counters i and first_non_red to zero.
+step 2) Step through the array. If the element is red  swap the element with the element at first_non_red and then increment first_non_red by 1. 
+step 3) Swap first_non_red and the last element before incrementing first_non_red.
+step 4) Set i = first_non_red, set first_non_white = first_non_red
+step 5) Step through the array from i until the end. If the element is white swap the element with the element at first_non_white and then increment first_non_white by 1.

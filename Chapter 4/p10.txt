@@ -1,0 +1,10 @@
+
+step 1) sort the array of integers using mergesort.
+step 2) Use a for loop to loop through all elements in the array.
+step 4) set x = (T-current element)
+step 4) Use k-2 more for loops to binary search for T-x. 
+
+O(n^(k-1)logn)
+
+
+
